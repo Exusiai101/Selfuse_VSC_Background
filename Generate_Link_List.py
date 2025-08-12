@@ -2,7 +2,7 @@ import os
 
 def generate_raw_links():
     # GitHub raw link base URL
-    base_url = "https://raw.githubusercontent.com/Sheart-out/Selfuse_VSC_Background/refs/heads/main/"
+    base_url = "https://raw.githubusercontent.com/Exusiai101/Selfuse_VSC_Background/refs/heads/main/"
     
     # Common image file extensions
     image_extensions = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.webp']
@@ -21,7 +21,7 @@ def generate_raw_links():
     # Generate raw links
     raw_links = []
     for image_file in image_files:
-        raw_link = '"' + base_url + image_file + '"'
+        raw_link = '"' + base_url + image_file + '"' + ','
         raw_links.append(raw_link)
     
     # Write links to a text file
